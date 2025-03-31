@@ -2,16 +2,16 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='flex flex-row justify-center w-full mx-auto bg-gradient-to-b from-orange-50'>
-      <div className="max-w-5xl flex flex-col md:pt-36 pt-20 px-9 md:px-0 space-y-4 text-center  ">
-        <h1 className='md:text-home-heading-large text-home-heading-small font-bold max-w-3xl mx-auto '>Scale your <span className='text-blue-500'>Business 10X Faster</span></h1>
-        <p className='md:block max-w-xl mx-auto pt-5'>At 10XGrowth, we empower businesses with cutting-edge strategies, digital marketing, and technology solutions to maximize revenue and impact.</p>
-        <div className='text-white flex items-center justify-center gap-6 pt-10 '>
+    <div className='flex flex-row justify-center  w-full mx-auto bg-gradient-to-b from-orange-50'>
+      <div className="max-w-4xl flex flex-col md:pt-36 pt-20 px-9 md:px-0 space-y-4 text-center ">
+        <h1 className='md:text-home-heading-large text-home-heading-small font-bold max-w-3xl mx-auto   '>Scale your  <span className='text-blue-500'>Business </span><br /> <span className='text-blue-500'>10X Faster</span></h1>
+        <p className='md:block max-w-xl mx-auto pt-3'>At 10XGrowth, we empower businesses with cutting-edge strategies, digital marketing, and technology solutions to maximize revenue and impact.</p>
+        <div className='text-white flex items-center justify-center gap-6 pt-5 '>
           <button className='bg-green-500 rounded px-4 py-2'>Get Started</button>
           <button className='bg-black rounded px-4 py-2'>Learn more</button>
         </div>
       </div>
-      <div  >
+      <div>
         <img className='' src="https://cdni.iconscout.com/illustration/premium/thumb/business-growth-illustration-download-in-svg-png-gif-file-formats--successful-strategy-motivation-achieving-goals-leadership-success-pack-illustrations-3658876.png" alt="" />
       </div>
     </div>
