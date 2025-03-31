@@ -3,7 +3,12 @@ import { FaBars, FaTimes } from "react-icons/fa"; // Import icons
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <nav className="flex items-center justify-between py-5 px-6 md:px-16 bg-orange-50 hover:bg-orange-50/20 hover:shadow-lg transition-shadow duration-300 sticky top-0 z-10">
       {/* Logo */}
@@ -18,7 +23,7 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <ul className="hidden md:flex text-xl text-center justify-center gap-[4vw]">
         <li className="hover:text-green-500 hover:cursor-pointer">Home</li>
-        <li className="hover:text-green-500 hover:cursor-pointer">Services</li>
+        <li className="hover:text-green-500 hover:cursor-pointer" onClick={() => scrollToSection("services")}>Services</li>
         <li className="hover:text-green-500 hover:cursor-pointer">Studio</li>
         <li className="hover:text-green-500 hover:cursor-pointer">About us</li>
       </ul>
