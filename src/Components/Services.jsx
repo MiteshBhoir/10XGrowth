@@ -53,17 +53,19 @@ const services = [
 
 const Services = () => {
   return (
-    <section className=" py-20 px-6">
+    <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-6">🌐 10XGrowth Services</h2>
-        <p className="text-gray-600 mb-12">
+        <p className="text-gray-600 mb-12 text-lg">
           We provide high-impact services that scale businesses rapidly.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="p-6 bg-white shadow-lg rounded-xl transition-transform transform hover:scale-105"
+              className="p-6 bg-white shadow-md rounded-xl transition-transform transform hover:scale-105 hover:shadow-xl flex flex-col items-center text-center"
             >
               <div className="text-5xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>
