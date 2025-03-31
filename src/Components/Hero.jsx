@@ -2,7 +2,16 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center w-full mx-auto bg-gradient-to-b from-orange-50 px-6 md:px-0">
+    <div className="flex flex-col-reverse md:flex-row justify-center items-center w-full mx-auto bg-gradient-to-b from-orange-50 px-6 md:px-0">
+      {/* Right Side (Image First on Mobile) */}
+      <div className="mt-10 md:mt-0 md:mr-10 flex justify-center">
+        <img
+          className="w-full max-w-xs md:max-w-md"
+          src="https://cdni.iconscout.com/illustration/premium/thumb/business-growth-illustration-download-in-svg-png-gif-file-formats--successful-strategy-motivation-achieving-goals-leadership-success-pack-illustrations-3658876.png"
+          alt="Business Growth"
+        />
+      </div>
+
       {/* Left Side (Text Content) */}
       <div className="max-w-4xl flex flex-col md:pt-36 pt-20 space-y-4 text-center md:text-left">
         <h1 className="text-home-heading-small md:text-home-heading-large font-bold max-w-3xl mx-auto md:mx-0">
@@ -17,15 +26,6 @@ const Hero = () => {
           <button className="bg-green-500 rounded px-6 py-3 w-full md:w-auto">Get Started</button>
           <button className="bg-black rounded px-6 py-3 w-full md:w-auto">Learn More</button>
         </div>
-      </div>
-
-      {/* Right Side (Image) */}
-      <div className="mt-10 md:mt-0 md:ml-10">
-        <img
-          className="w-full max-w-xs md:max-w-md"
-          src="https://cdni.iconscout.com/illustration/premium/thumb/business-growth-illustration-download-in-svg-png-gif-file-formats--successful-strategy-motivation-achieving-goals-leadership-success-pack-illustrations-3658876.png"
-          alt="Business Growth"
-        />
       </div>
     </div>
   );
