@@ -15,7 +15,7 @@ const Hero = () => {
 
       {/* Text Content (Below Image on Mobile, Left on Desktop) */}
       <div className="max-w-4xl flex flex-col md:pt-36 pt-10 space-y-4 text-center md:text-left md:order-1">
-        <h1 className="text-home-heading-small md:text-home-heading-large font-bold max-w-3xl mx-auto md:mx-0">
+        <h1 className="text-home-heading-small md:text-home-heading-large font-bold max-w-3xl mx-auto md:mx-0 text-6xl">
           Scale your <span className="text-blue-500">Business</span> <br />
           <span className="text-blue-500">10X Faster</span>
         </h1>

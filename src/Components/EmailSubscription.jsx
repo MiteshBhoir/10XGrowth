@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 
 const EmailSubscription = () => {
   return (
@@ -20,7 +20,7 @@ const EmailSubscription = () => {
           />
           <button className="bg-blue-600 text-white px-6 py-3 hover:bg-blue-700 transition font-semibold">
             Subscribe
-          </button>
+          </button> 
         </div>
       </div>
     </section>
